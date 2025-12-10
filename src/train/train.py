@@ -13,7 +13,7 @@ from src.train.model import Generator, Discriminator
 # =========================
 # KONFIGURASI KELOMPOK (EDIT SESUAI ANGGOTA)
 # =========================
-START_EPOCH = 1     # ⬅️ ganti sesuai anggota
+START_EPOCH = 2     # ⬅️ ganti sesuai anggota
 END_EPOCH   = 5     # ⬅️ ganti sesuai anggota
 
 # Contoh pembagian:
