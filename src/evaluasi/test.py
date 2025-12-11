@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore", category=RuntimeWarning)
 # =========================
 # KONFIGURASI
 # =========================
-EPOCH_LIST = [1]  # sesuai pembagian anggota
+EPOCH_LIST = [1,2,3,4,5]
 BATCH_SIZE = 8
 SAVE_SAMPLES = 10
 
@@ -58,7 +58,7 @@ print("Test batches:", len(test_loader))
 
 
 # =========================
-# HELPER TENSOR → IMAGE
+# HELPER TENSOR → IMAGE (numpy HWC float [0,1])
 # =========================
 def tensor_to_img(t):
     t = (t.clamp(-1, 1) + 1) / 2
@@ -77,20 +77,43 @@ for epoch in EPOCH_LIST:
     save_epoch_dir = SAVE_DIR / f"epoch_{epoch}"
     os.makedirs(save_epoch_dir, exist_ok=True)
 
-    # Load Model
+    # Load Model: prefer full checkpoint, fallback to G only
     G = Generator(upscale_factor=2).to(device)
-    G.load_state_dict(
-        torch.load(CHECKPOINT_DIR / f"G_epoch_{epoch}.pth", map_location=device)
-    )
+    ckpt_full = CHECKPOINT_DIR / f"checkpoint_epoch_{epoch}.pth"
+    ckpt_g = CHECKPOINT_DIR / f"G_epoch_{epoch}.pth"
+
+    if ckpt_full.exists():
+        ckpt = torch.load(ckpt_full, map_location=device)
+        if "G_state" in ckpt:
+            G.load_state_dict(ckpt["G_state"])
+            print(f"Loaded full checkpoint: {ckpt_full.name}")
+        else:
+            # fallback: maybe user saved dict differently
+            try:
+                G.load_state_dict(ckpt)
+                print(f"Loaded checkpoint (raw) from: {ckpt_full.name}")
+            except Exception:
+                raise RuntimeError(f"Cannot load G state from {ckpt_full}")
+    elif ckpt_g.exists():
+        G.load_state_dict(torch.load(ckpt_g, map_location=device))
+        print(f"Loaded G-only checkpoint: {ckpt_g.name} (optimizer state not restored)")
+    else:
+        print(f"Warning: checkpoint for epoch {epoch} not found (checked {ckpt_full.name} and {ckpt_g.name}). Skipping this epoch.")
+        continue
+
     G.eval()
 
-    psnr_bic, psnr_sr = [], []
-    ssim_bic, ssim_sr = [], []
+    # lists for metrics (reset per epoch)
+    psnr_bic = []
+    psnr_sr = []
+    ssim_bic = []
+    ssim_sr = []
 
     saved = 0
 
     with torch.no_grad():
-        for idx, (lr, hr) in enumerate(tqdm(test_loader)):
+        loop = tqdm(test_loader, desc=f"Eval epoch {epoch}")
+        for idx, (lr, hr) in enumerate(loop):
 
             lr = lr.to(device)
             hr = hr.to(device)
@@ -103,12 +126,19 @@ for epoch in EPOCH_LIST:
                 sr_img = tensor_to_img(sr[i])
                 bic_img = tensor_to_img(bicubic[i])
 
-                psnr_bic.append(peak_signal_noise_ratio(hr_img, bic_img, data_range=1.0))
-                psnr_sr.append(peak_signal_noise_ratio(hr_img, sr_img, data_range=1.0))
+                # compute per-patch metrics (may produce inf)
+                p_bic = peak_signal_noise_ratio(hr_img, bic_img, data_range=1.0)
+                p_sr = peak_signal_noise_ratio(hr_img, sr_img, data_range=1.0)
 
-                ssim_bic.append(structural_similarity(hr_img, bic_img, channel_axis=-1, data_range=1.0))
-                ssim_sr.append(structural_similarity(hr_img, sr_img, channel_axis=-1, data_range=1.0))
+                s_bic = structural_similarity(hr_img, bic_img, channel_axis=-1, data_range=1.0)
+                s_sr = structural_similarity(hr_img, sr_img, channel_axis=-1, data_range=1.0)
 
+                psnr_bic.append(p_bic)
+                psnr_sr.append(p_sr)
+                ssim_bic.append(s_bic)
+                ssim_sr.append(s_sr)
+
+                # save sample images (first SAVE_SAMPLES only)
                 if saved < SAVE_SAMPLES:
                     def save(img, name):
                         img = (img * 255).clip(0, 255).astype(np.uint8)
@@ -120,22 +150,27 @@ for epoch in EPOCH_LIST:
                     save(sr_img,      f"{gid:05d}_SRGAN.png")
                     saved += 1
 
-# konversi ke numpy array
-psnr_bic_arr = np.array(psnr_bic)
-psnr_sr_arr  = np.array(psnr_sr)
+    # filter inf/nan before mean; handle all-inf case
+    psnr_bic_arr = np.array(psnr_bic)
+    psnr_sr_arr  = np.array(psnr_sr)
 
-# abaikan nilai yang inf atau nan
-psnr_bic_mean = np.mean(psnr_bic_arr[np.isfinite(psnr_bic_arr)])
-psnr_sr_mean  = np.mean(psnr_sr_arr[np.isfinite(psnr_sr_arr)])
+    finite_bic = psnr_bic_arr[np.isfinite(psnr_bic_arr)]
+    finite_sr  = psnr_sr_arr[np.isfinite(psnr_sr_arr)]
 
-ssim_bic_arr = np.array(ssim_bic)
-ssim_sr_arr  = np.array(ssim_sr)
+    psnr_bic_mean = float(np.mean(finite_bic)) if finite_bic.size > 0 else float('nan')
+    psnr_sr_mean  = float(np.mean(finite_sr))  if finite_sr.size  > 0 else float('nan')
 
-ssim_bic_mean = np.mean(ssim_bic_arr[np.isfinite(ssim_bic_arr)])
-ssim_sr_mean  = np.mean(ssim_sr_arr[np.isfinite(ssim_sr_arr)])
+    ssim_bic_arr = np.array(ssim_bic)
+    ssim_sr_arr  = np.array(ssim_sr)
 
-print(f"\n📊 HASIL EPOCH {epoch}")
-print(f"PSNR Bicubic : {psnr_bic_mean:.2f}")
-print(f"PSNR SRGAN   : {psnr_sr_mean:.2f}")
-print(f"SSIM Bicubic : {ssim_bic_mean:.4f}")
-print(f"SSIM SRGAN   : {ssim_sr_mean:.4f}")
+    finite_s_bic = ssim_bic_arr[np.isfinite(ssim_bic_arr)]
+    finite_s_sr  = ssim_sr_arr[np.isfinite(ssim_sr_arr)]
+
+    ssim_bic_mean = float(np.mean(finite_s_bic)) if finite_s_bic.size > 0 else float('nan')
+    ssim_sr_mean  = float(np.mean(finite_s_sr))  if finite_s_sr.size > 0 else float('nan')
+
+    print(f"\n📊 HASIL EPOCH {epoch}")
+    print(f"PSNR Bicubic : {psnr_bic_mean:.2f}")
+    print(f"PSNR SRGAN   : {psnr_sr_mean:.2f}")
+    print(f"SSIM Bicubic : {ssim_bic_mean:.4f}")
+    print(f"SSIM SRGAN   : {ssim_sr_mean:.4f}")

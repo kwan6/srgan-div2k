@@ -14,7 +14,7 @@ SAVE_DIR = BASE_DIR / "outputs" / "custom_results"
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # Load model (default epoch 20)
-checkpoint = BASE_DIR / "outputs" / "checkpoints" / "G_epoch_20.pth"
+checkpoint = BASE_DIR / "outputs" / "checkpoints" / "G_epoch_5.pth"
 G = Generator(upscale_factor=2).to(device)
 G.load_state_dict(torch.load(checkpoint, map_location=device))
 G.eval()
