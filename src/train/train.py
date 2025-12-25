@@ -16,8 +16,8 @@ from src.train.model import Generator, Discriminator
 # =========================
 # KONFIGURASI
 # =========================
-START_EPOCH = 1      
-END_EPOCH   = 5
+START_EPOCH = 16      
+END_EPOCH   = 20
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
