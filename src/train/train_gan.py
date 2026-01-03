@@ -15,9 +15,9 @@ from src.train.model import Generator, Discriminator
 # =========================
 # KONFIGURASI LANJUTAN
 # =========================
-PRETRAIN_CHECKPOINT = "checkpoint_epoch_30.pth" # Nama file terakhir dari pretrain
-START_EPOCH_GAN     = 31                        # Lanjut dari epoch ini
-END_EPOCH_GAN       = 35                        # Target finish
+PRETRAIN_CHECKPOINT = "checkpoint_epoch_34.pth" # Nama file terakhir dari pretrain
+START_EPOCH_GAN     = 35                        # Lanjut dari epoch ini
+END_EPOCH_GAN       = 40                        # Target finish
 BATCH_SIZE          = 8
 LR_G                = 1e-4
 LR_D                = 1e-4
