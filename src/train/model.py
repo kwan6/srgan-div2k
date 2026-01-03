@@ -18,7 +18,7 @@ import torch.nn.functional as F
 
 # -----------------------------
 # Basic building blocks
-# -----------------------------
+# ----------------------------- 
 class ResidualBlock(nn.Module):
     """
     Residual block used in SRGAN generator.

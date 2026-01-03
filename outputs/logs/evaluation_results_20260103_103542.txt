@@ -1,0 +1,614 @@
+======================================================================
+SRGAN EVALUATION RESULTS
+======================================================================
+Timestamp: 20260103_103542
+Device: cuda
+Test samples: 13743
+Batch size: 8
+Epochs to evaluate: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+======================================================================
+
+
+======================================================================
+EPOCH 1
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_1.pth
+First layer weight mean: -0.000147
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.49 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.8917
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 2
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_2.pth
+First layer weight mean: -0.000173
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 30.65 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.8659
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 3
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_3.pth
+First layer weight mean: -0.000156
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.58 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9173
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 4
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_4.pth
+First layer weight mean: -0.000201
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.14 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9155
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 5
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_5.pth
+First layer weight mean: -0.000188
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 33.22 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9079
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 6
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_6.pth
+First layer weight mean: -0.000099
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.29 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9086
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 7
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_7.pth
+First layer weight mean: -0.000089
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.79 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9137
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 8
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_8.pth
+First layer weight mean: -0.000099
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.04 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9187
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 9
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_9.pth
+First layer weight mean: -0.000087
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.52 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9185
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 10
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_10.pth
+First layer weight mean: -0.000095
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.10 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9252
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 11
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_11.pth
+First layer weight mean: -0.000100
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.01 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9120
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 12
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_12.pth
+First layer weight mean: -0.000107
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 36.50 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9375
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 13
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_13.pth
+First layer weight mean: -0.000093
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.87 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9156
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 14
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_14.pth
+First layer weight mean: -0.000122
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.44 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9194
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 15
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_15.pth
+First layer weight mean: -0.000143
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.73 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9228
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 16
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_16.pth
+First layer weight mean: -0.000143
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.70 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9172
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 17
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_17.pth
+First layer weight mean: -0.000144
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.05 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9164
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 18
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_18.pth
+First layer weight mean: -0.000145
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.60 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9255
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 19
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_19.pth
+First layer weight mean: -0.000159
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 36.03 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9291
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 20
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_20.pth
+First layer weight mean: -0.000144
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.91 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9256
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 21
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_21.pth
+First layer weight mean: -0.000182
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.56 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9282
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 22
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_22.pth
+First layer weight mean: -0.000127
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 36.28 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9295
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 23
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_23.pth
+First layer weight mean: -0.000137
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 34.19 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9110
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 24
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_24.pth
+First layer weight mean: -0.000053
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.58 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9222
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 25
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_25.pth
+First layer weight mean: -0.000120
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 35.81 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9229
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 26
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_26.pth
+First layer weight mean: -0.000082
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.91 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9056
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 27
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_27.pth
+First layer weight mean: -0.000095
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.09 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.8987
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 28
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_28.pth
+First layer weight mean: -0.000186
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.41 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9025
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 29
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_29.pth
+First layer weight mean: -0.000183
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.07 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9015
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 30
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_30.pth
+First layer weight mean: -0.000143
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.15 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9031
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 31
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_31.pth
+First layer weight mean: -0.000158
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 33.16 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9005
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 32
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_32.pth
+First layer weight mean: -0.000199
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.43 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9023
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 33
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_33.pth
+First layer weight mean: -0.000104
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.40 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9013
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 34
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_34.pth
+First layer weight mean: -0.000224
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.47 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.8961
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 35
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_35.pth
+First layer weight mean: -0.000085
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 33.70 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9064
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 36
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_36.pth
+First layer weight mean: -0.000194
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.91 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9031
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 37
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_37.pth
+First layer weight mean: -0.000083
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 33.17 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9063
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 38
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_38.pth
+First layer weight mean: -0.000104
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.70 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9033
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 39
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_39.pth
+First layer weight mean: -0.000103
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.72 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9020
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EPOCH 40
+======================================================================
+Checkpoint loaded: full checkpoint: checkpoint_epoch_40.pth
+First layer weight mean: -0.000165
+
+RESULTS:
+  PSNR Bicubic : 35.17 dB
+  PSNR SRGAN   : 32.78 dB
+  SSIM Bicubic : 0.9096
+  SSIM SRGAN   : 0.9029
+  Total samples: 13743
+  Samples saved: 5
+
+
+======================================================================
+EVALUATION COMPLETED
+======================================================================

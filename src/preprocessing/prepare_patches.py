@@ -38,4 +38,4 @@ for hr_path in tqdm(hr_paths):
 
             patch_id += 1
 
-print("✅ Patch selesai:", patch_id)
+print(" Patch selesai:", patch_id)

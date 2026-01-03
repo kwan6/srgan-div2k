@@ -25,8 +25,8 @@ warnings.filterwarnings("ignore", category=RuntimeWarning)
 # KONFIGURASI
 # =========================
 BATCH_SIZE = 8
-SAVE_SAMPLES = 10
-SKIP_EXISTING = True  # Set False jika mau re-evaluate yang sudah ada
+SAVE_SAMPLES = 5
+SKIP_EXISTING = False  # Set False jika mau re-evaluate yang sudah ada
 
 
 

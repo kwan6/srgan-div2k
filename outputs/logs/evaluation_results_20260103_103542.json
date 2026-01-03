@@ -1,0 +1,528 @@
+{
+    "timestamp": "20260103_103542",
+    "device": "cuda",
+    "test_samples": 13743,
+    "batch_size": 8,
+    "epochs": {
+        "1": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_1.pth",
+            "first_layer_weight_mean": -0.00014738879690412432,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.49,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.8917
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "2": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_2.pth",
+            "first_layer_weight_mean": -0.0001731939846649766,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 30.65,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.8659
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "3": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_3.pth",
+            "first_layer_weight_mean": -0.0001557235373184085,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.58,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9173
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "4": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_4.pth",
+            "first_layer_weight_mean": -0.00020137318642809987,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.14,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9155
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "5": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_5.pth",
+            "first_layer_weight_mean": -0.00018766982248052955,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 33.22,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9079
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "6": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_6.pth",
+            "first_layer_weight_mean": -9.898071584757417e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.29,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9086
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "7": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_7.pth",
+            "first_layer_weight_mean": -8.877526852302253e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.79,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9137
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "8": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_8.pth",
+            "first_layer_weight_mean": -9.903148747980595e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.04,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9187
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "9": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_9.pth",
+            "first_layer_weight_mean": -8.650548261357471e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.52,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9185
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "10": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_10.pth",
+            "first_layer_weight_mean": -9.494523692410439e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.1,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9252
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "11": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_11.pth",
+            "first_layer_weight_mean": -0.00010012710117734969,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.01,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.912
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "12": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_12.pth",
+            "first_layer_weight_mean": -0.00010685715824365616,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 36.5,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9375
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "13": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_13.pth",
+            "first_layer_weight_mean": -9.315626084571704e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.87,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9156
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "14": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_14.pth",
+            "first_layer_weight_mean": -0.0001217788303620182,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.44,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9194
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "15": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_15.pth",
+            "first_layer_weight_mean": -0.0001433734141755849,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.73,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9228
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "16": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_16.pth",
+            "first_layer_weight_mean": -0.00014334787556435913,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.7,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9172
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "17": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_17.pth",
+            "first_layer_weight_mean": -0.0001435607991879806,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.05,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9164
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "18": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_18.pth",
+            "first_layer_weight_mean": -0.00014451210154220462,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.6,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9255
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "19": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_19.pth",
+            "first_layer_weight_mean": -0.0001589194143889472,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 36.03,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9291
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "20": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_20.pth",
+            "first_layer_weight_mean": -0.00014393638412002474,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.91,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9256
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "21": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_21.pth",
+            "first_layer_weight_mean": -0.0001817690790630877,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.56,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9282
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "22": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_22.pth",
+            "first_layer_weight_mean": -0.0001265046448679641,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 36.28,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9295
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "23": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_23.pth",
+            "first_layer_weight_mean": -0.00013717141700908542,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 34.19,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.911
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "24": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_24.pth",
+            "first_layer_weight_mean": -5.334569505066611e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.58,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9222
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "25": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_25.pth",
+            "first_layer_weight_mean": -0.00011979311966570094,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 35.81,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9229
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "26": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_26.pth",
+            "first_layer_weight_mean": -8.188388892449439e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.91,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9056
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "27": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_27.pth",
+            "first_layer_weight_mean": -9.539787424728274e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.09,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.8987
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "28": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_28.pth",
+            "first_layer_weight_mean": -0.00018611796258483082,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.41,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9025
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "29": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_29.pth",
+            "first_layer_weight_mean": -0.00018308316066395491,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.07,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9015
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "30": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_30.pth",
+            "first_layer_weight_mean": -0.00014321664639282972,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.15,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9031
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "31": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_31.pth",
+            "first_layer_weight_mean": -0.0001584454148542136,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 33.16,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9005
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "32": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_32.pth",
+            "first_layer_weight_mean": -0.00019867649825755507,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.43,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9023
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "33": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_33.pth",
+            "first_layer_weight_mean": -0.00010365859634475783,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.4,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9013
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "34": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_34.pth",
+            "first_layer_weight_mean": -0.00022378649737220258,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.47,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.8961
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "35": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_35.pth",
+            "first_layer_weight_mean": -8.511458872817457e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 33.7,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9064
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "36": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_36.pth",
+            "first_layer_weight_mean": -0.00019398740550968796,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.91,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9031
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "37": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_37.pth",
+            "first_layer_weight_mean": -8.340746717294678e-05,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 33.17,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9063
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "38": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_38.pth",
+            "first_layer_weight_mean": -0.00010405169450677931,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.7,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9033
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "39": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_39.pth",
+            "first_layer_weight_mean": -0.00010272564395563677,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.72,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.902
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        },
+        "40": {
+            "status": "success",
+            "checkpoint": "full checkpoint: checkpoint_epoch_40.pth",
+            "first_layer_weight_mean": -0.00016507705731783062,
+            "metrics": {
+                "psnr_bicubic": 35.17,
+                "psnr_srgan": 32.78,
+                "ssim_bicubic": 0.9096,
+                "ssim_srgan": 0.9029
+            },
+            "total_samples": 13743,
+            "samples_saved": 5
+        }
+    }
+}
